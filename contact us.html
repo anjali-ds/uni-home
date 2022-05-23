@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    
+    .Contact {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(nwan.jpg);
+        background-size: cover;
+    }
+    
+    .Contact .content {
+        max-width: 800px;
+        text-align: center;
+    }
+    
+    .Contact .content h2 {
+        font-size: 36px;
+        font-weight: 500;
+        color: lightcyan;
+        padding: 10px;
+    }
+    
+    .Contact .content h2:hover {
+        background-color: lightsteelblue;
+    }
+    
+    .Contact .content p {
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .container .contactInfo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container .contactInfo .box {
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    
+    .container .contactInfo .box .icon {
+        min-width: 60px;
+        height: 60px;
+        box-sizing: border-box;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+    
+    .container .contactInfo .box .text {
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    
+    .container .contactInfo .box .text h3 {
+        font-weight: 500;
+        color: #00bcd4;
+    }
+    
+    .container .contactInfo .box .text h3:hover {
+        background-color: whitesmoke;
+    }
+    
+    .contactForm {
+        width: 40%;
+        padding: 40px;
+        background: white;
+    }
+    
+    .contactForm h2 {
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+    
+    .contactForm h2:hover {
+        background-color: lightblue;
+    }
+    
+    .contactForm .inputBox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: lightsteelblue;
+        border-bottom: 2px solid #333;
+        outline: thistle;
+        resize: none;
+    }
+    
+    .contactForm .inputBox span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+    
+    .contactForm .inputBox input:focus~span,
+    .contactForm .inputBox input:valid~span,
+    .contactForm .inputBox textarea:focus~span,
+    .contactForm .inputBox textarea:valid~span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+    
+    .contactForm .inputBox input[type="submit"] {
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    
+    @media(max-width:991px) {
+        .Contact {
+            padding: 50px;
+        }
+        .container {
+            flex-direction: column;
+        }
+        .container .contactInfo {
+            margin-bottom: 40px;
+        }
+        .container .contactInfo,
+        .contactForm {
+            width: 100%;
+        }
+    }
+    
+    .social-icon {
+        box-sizing: border-box;
+        display: flex;
+        padding: 10px;
+        display: inline-block;
+        align-items: baseline;
+    }
+    
+    .social-icon:hover {
+        background-color: salmon;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <section class="Contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>The University of ADS is a premier university of the country with a venerable legacy and international acclaim for highest academic standards, diverse educational programmes, distinguished faculty, illustrious alumni, varied co-curricular
+                activities and modern infrastructure.<br> <br>Established in 1921 as a unitary, teaching and residential University by the Act of the then Central Legislative Assembly, a strong commitment to excellence in teaching, research.<br> Six Departments
+                namely ENGINEERING, MANAGEMENT, HUMANITIES, PHARMACY, LAW and SCIENCE have been awarded the status of the Centres of Advanced Studies. </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div clas="icon"><i class="fa fa-map-marker" aria-hidden="true" style="color: #fff;"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <a href="https://www.google.com/maps/place/79+New+Montgomery+St,+San+Francisco,+CA+94105,+USA/@37.7879584,-122.4026565,17z/data=!3m1!4b1!4m5!3m4!1s0x80858062b0543145:0xa997a4ee815762f4!8m2!3d37.7879584!4d-122.4004678">
+                            <p>79 sNew Montgomery,<br>San Francisco,<br> CA 94105</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <div clas="icon"><i class="fa fa-phone-square" aria-hidden="true" style="color: #fff;"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <a href="+91 9021170309">
+                            <p>+91 9021170309</p>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <div clas="icon"><i class="fa fa-envelope-o" aria-hidden="true" style="color: #fff;"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <a href="https://mail.google.com/mail/u/0/#inbox">
+                            <p>ads09@gmail.com</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div>
+                    <a href="https://www.instagram.com/ads_21_17/?utm_medium=copy_link"> <i class="social-icon"><img src="instagram.png"></i></a>
+                    <a href="https://www.facebook.com/"> <i class="social-icon"><img src="facebook.png"></i></a>
+                    <a href="https://www.youtube.com/channel/UCIe7yqwXbKiV-_rrc-Q13KA"> <i class="social-icon"><img src="youtube.png"></i></a>
+                    <a href="https://twitter.com/adsaini2117"> <i class="social-icon"><img src="twitter.png"></i></a>
+                </div>
+
+
+
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="Email" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
